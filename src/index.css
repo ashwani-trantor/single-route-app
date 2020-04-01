@@ -1,4 +1,16 @@
 ul > li {
   display: inline;
+  margin-right: 20px;
+}
+
+ul.article-list {
+  list-style-type: disc;
+}
+
+ul.article-list > li {
+  display: block;
+}
+
+label {
   margin-right: 10px;
 }

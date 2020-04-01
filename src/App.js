@@ -8,6 +8,8 @@ import {
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import List from "./components/List";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -30,6 +32,16 @@ function App() {
                 Contact
               </NavLink>
             </li>
+            <li>
+              <NavLink exact to="/list">
+                List of Articles
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/new-article">
+                New Article
+              </NavLink>
+            </li>
           </ul>
         </header>
         <main>
@@ -37,6 +49,8 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={Contact} />
+            <Route path="/list" exact component={List} />
+            <Route path="/new-article" exact component={Form} />
           </Switch>
         </main>
       </Router>

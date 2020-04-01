@@ -1,7 +1,18 @@
 import React from "react";
 
-function Contact() {
-  return <h5>Contact Component</h5>;
+class Contact extends React.Component {
+  redirectToAbout = () => {
+    this.props.history.push("/about");
+  };
+
+  render() {
+    return (
+      <>
+        <h5>Contact Component</h5>
+        <button onClick={() => this.redirectToAbout()}>Click Me</button>
+      </>
+    );
+  }
 }
 
 export default Contact;
